@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Myprofile</title>
+        <link rel="stylesheet" href="style.css" />   
+        <link rel="stylesheet" href="mediaquires.css" />
+    </head>
+
+    <body>
+        <nav id="desktop-nav">
+                <div class="logo">Derek Fisher</div>
+                <div>
+                    <ul  class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>   
+                </div>
+        </nav>
+        <nav id="mobile-nav">
+            <div class="logo">Derek Fisher</div>
+            <div class="burger">
+                <div class="icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>   
+        </nav>
+
+
+        <section id="profile">
+            
+            <div class="profile__pic-container">
+                <img src="./asset/Alex.jpg" alt="Profile Picture1" class="profile__img1">
+                <img src="./asset/Alex.jpg" alt="Profile Picture2" class="profile__img2">
+            </div>
+
+            <div class="profile__details">
+
+
+                <p class="profile__details-p1">Hola I'm</p>
+                <h1 class="title">Derek Fisher</h1>
+                <p class="profile__details-p2">A student at Xiamen University (XMU)</p>
+
+                <div class="btn-container">
+                    <button class="btn btn-color-1" onclick="window.open('./assets/resume-example.pdf')">Donwload CV</button>
+            
+            
+                    <button class="btn btn-color-2" onclick="location.href='./#contact'"">Contact Me</button>
+            
+                </div> 
+
+                <div id="social-container">
+                    <img 
+                    src=" ./assets/github.png" 
+                    alt="My Github Profile" 
+                    class="icon" onclick="window.open('https://github.com/DerekFisher')">
+            
+            
+                    <img 
+                    src=" ./assets/linkedin.png" 
+                    alt="My Linkedin Profile" 
+                    class="icon" 
+                    onclick="window.open('https://www.linkedin.com/in/derek-fisher-52121119a/')">
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- About Section -->
+        <section id="about">
+
+            <!-- About Section Text -->
+            <p class="about__text-p1">Get To Know More</p>
+            <h2 class="title">About Me</h2>
+
+            <!-- About Section Container -->
+            <div class="about__container">
+
+                <!-- About Section Image -->
+                <div class="about__pic-container">
+                    <img src="./assets/about-pic.png" alt="Derek Fisher" class="about-pic">
+                </div>
+
+                <!-- About Section Details -->
+                <div class="about-details-container">
+
+                    <!-- About Section Details Container -->
+                    <div class="about-container">
+
+                        <!-- About Section Details Experience -->
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+                            <h3>Experience</h3>
+                            <p>I have 1+ years of experience in<br> the field of Computer Science.</p>
+                        </div>
+
+                        <!-- About Section Details Education -->
+                        <div class="details-container">
+                            <img src="./assets/education.png" alt="Education Icon" class="icon">
+                            <h3>Education</h3>
+                            <p>Learning physics at the University of Xiamen(XMU).</p>
+                        </div>
+
+                    </div>
+                    
+
+                
+                    <!-- About Section Bottom Text -->
+                    <div class="text-container">
+                         <p class="text-indent text-size2">Since in high school,I has long had a facination for technology and the internet, physics, and mathematics.
+                             Always been fascinated by the way things work and how they are designed, I have always been eager to learn more about the world around me.
+                        </p>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <img src="./assets/arrow.png" alt="Next Section Arrow" class="icon arrow" onclick="location.href='#skills'">
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id ="skills">
+            <p class="skills__text-p1">My</p>
+            <h3 class="title">Skills</h3>
+
+            <div class="skills__details-container">
+                <div class="skills-container">
+
+                    
+                    <!-- Skills Section 1 -->
+                    <div class="details-container2">
+                        
+                        <h2 class="skills-subtitle">Front-End Development</h2> 
+
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Skills Checkmark" class="icon">
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Bsaic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Skills Checkmark" class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Bsaic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Skills Checkmark" class="icon">
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Bsaic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Skills Checkmark" class="icon">
+                                <div>
+                                    <h3>SASS</h3>
+                                    <p>Bsaic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Skills Checkmark" class="icon">
+                                <div>
+                                    <h3>TypeScript</h3>
+                                    <p>Bsaic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Skills Checkmark" class="icon">
+                                <div>
+                                    <h3>Material UI</h3>
+                                    <p>Bsaic</p>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+
+                    <!-- Skills Section 2 -->
+                    <div class="details-container2">
+                        <h2 class="skills-subtitle">Back-End Development</h2> 
+
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Skills Checkmark" class="icon">
+                                <div>
+                                    <h3>PostgreSQL</h3>
+                                    <p>Bsaic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Skills Checkmark" class="icon">
+                                <div>
+                                    <h3>Node Js</h3>
+                                    <p>Bsaic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Skills Checkmark" class="icon">
+                                <div>
+                                    <h3>Express JS</h3>
+                                    <p>Bsaic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Skills Checkmark" class="icon">
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Bsaic</p>
+                                </div>
+                            </article>
+                            
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Next Section Arrow" class="icon arrow" onclick="location.href='#contact'">
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <p class="contact__text-p1">Let's</p>
+            <h3 class="title">Get in Touch</h3>
+
+            <div class="contact__upper-info-container">
+                <div class="contact__info-container">
+                    <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon" onclick="window.open('mailto:yufisher80@gmail.com')">
+                    <p><a href="mailto:yufisher80@gmail.com">Email: yufisher80@gmail.com</a></p>
+                </div>
+
+                <div class="contact__info-container">
+                    <img src="./assets/github.png" alt="Github Icon" class="icon" onclick="window.open('https://github.com/DerekFisher')">
+                    <p><a href="mailto:yufisher80@gmail.com">Github</a></p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul  class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>   
+                </div>
+            </nav>
+            <p>copyright © 2024 Derek Fisher. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
